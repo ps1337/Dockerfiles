@@ -1,6 +1,6 @@
-[submodule "dockerfiles"]
-	path = dockerfiles
-	url = https://github.com/jessfraz/dockerfiles
 [submodule "dockerfiles-jessfraz"]
 	path = dockerfiles-jessfraz
 	url = https://github.com/jessfraz/dockerfiles
+[submodule "dockerfiles-remnux"]
+	path = dockerfiles-remnux
+	url = https://github.com/REMnux/docker.git
