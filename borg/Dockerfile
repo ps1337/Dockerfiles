@@ -3,6 +3,10 @@
 
 FROM debian:latest
 
+# Which borg version to download
+# {freebsd64, linux32, linux64, macosx64}
+ENV ARCH linux64
+
 # Prepare environment, create user, etc...
 ENV LANG C.UTF-8
 RUN ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
@@ -28,8 +32,11 @@ RUN export DEBIAN_FRONTEND=noninteractive \
         python3-virtualenv \
         python3-dev \
         python3-pip \
+        wget \
+        curl \
     && apt-get clean -y \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get autoremove -y --purge
 
 # Some more clean
 RUN rm -f /etc/ssh/ssh_host_*
@@ -39,11 +46,10 @@ RUN sed -i -e 's/^#PasswordAuthentication yes$/PasswordAuthentication no/g' \
            -e 's/^PermitRootLogin without-password$/PermitRootLogin no/g' \
           /etc/ssh/sshd_config
 
-
-# Install Borg
-RUN pip3 -v --log=/var/log/pip-install.log install borgbackup && \
-    apt-get remove -y --purge build-essential libssl-dev libacl1-dev && \
-    apt-get autoremove -y --purge
+# Install Borg using the latest release from GitHub
+WORKDIR /tmp
+RUN curl https://api.github.com/repos/borgbackup/borg/releases/latest | grep "browser_download_url" | grep $ARCH | grep -v ".asc" | cut -d : -f 2,3 | tr -d \" | wget -i -
+RUN mv borg* /usr/local/bin/borg && chown root:root /usr/local/bin/borg && chmod 755 /usr/local/bin/borg
 
 COPY entrypoint.sh /borg-server.sh
 RUN chmod +x /borg-server.sh
