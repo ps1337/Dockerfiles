@@ -4,3 +4,6 @@
 [submodule "dockerfiles-remnux"]
 	path = dockerfiles-remnux
 	url = https://github.com/REMnux/docker.git
+[submodule "hopper-docker"]
+	path = hopper-docker
+	url = https://github.com/BananaFett/hopper-docker.git
