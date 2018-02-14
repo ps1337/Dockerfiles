@@ -10,3 +10,6 @@
 [submodule "bibtex2pdf-docker"]
 	path = bibtex2pdf-docker
 	url = https://github.com/BananaFett/bibtex2pdf-docker.git
+[submodule "borg-docker"]
+    path = borg-docker
+    url = https://github.com/BananaFett/borg-docker.git
