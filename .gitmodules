@@ -19,3 +19,6 @@
 [submodule "nginx-reverse-proxy"]
 	path = nginx-reverse-proxy
 	url = https://github.com/BananaFett/nginx-reverse-proxy.git
+[submodule "radare2-docker"]
+	path = radare2-docker
+	url = https://github.com/BananaFett/radare2-docker
