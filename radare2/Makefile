@@ -29,7 +29,7 @@ run: ## Run container
 	touch $(DIR)/radare2rc && \
 	mkdir -p $(DIR)/r2-config && \
 	mkdir -p $(DIR)/sharedFolder && \
-	xhost +local:root && \ # Allow X forwarding
+	xhost +local:root && # Allow X forwarding \
 	sudo docker run \
 	-it \
 	--name $(CONTAINER_NAME) \
