@@ -7,3 +7,6 @@
 [submodule "hopper-docker"]
 	path = hopper-docker
 	url = https://github.com/BananaFett/hopper-docker.git
+[submodule "bibtex2pdf"]
+	path = bibtex2pdf
+	url = https://github.com/BananaFett/bibtex2pdf.git
