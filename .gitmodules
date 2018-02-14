@@ -13,3 +13,6 @@
 [submodule "borg-docker"]
     path = borg-docker
     url = https://github.com/BananaFett/borg-docker.git
+[submodule "cutter-docker"]
+	path = cutter-docker
+	url = https://github.com/BananaFett/cutter-docker.git
