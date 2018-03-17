@@ -22,3 +22,6 @@
 [submodule "radare2-docker"]
 	path = radare2-docker
 	url = https://github.com/BananaFett/radare2-docker
+[submodule "scrcpy-docker"]
+	path = scrcpy-docker
+	url = https://github.com/pierlon/scrcpy-docker
