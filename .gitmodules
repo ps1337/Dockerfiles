@@ -25,3 +25,6 @@
 [submodule "scrcpy-docker"]
 	path = scrcpy-docker
 	url = https://github.com/pierlon/scrcpy-docker
+[submodule "monit-docker"]
+	path = monit-docker
+	url = https://github.com/ps1337/monit-docker
