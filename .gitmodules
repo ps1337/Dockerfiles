@@ -28,3 +28,6 @@
 [submodule "monit-docker"]
 	path = monit-docker
 	url = https://github.com/ps1337/monit-docker
+[submodule "pairprog-docker"]
+	path = pairprog-docker
+	url = https://github.com/ps1337/pairprog-docker.git
