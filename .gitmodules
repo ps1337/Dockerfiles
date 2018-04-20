@@ -31,3 +31,6 @@
 [submodule "pairprog-docker"]
 	path = pairprog-docker
 	url = https://github.com/ps1337/pairprog-docker.git
+[submodule "elodie-docker"]
+	path = elodie-docker
+	url = https://github.com/ps1337/elodie-docker.git
