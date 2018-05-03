@@ -34,3 +34,6 @@
 [submodule "elodie-docker"]
 	path = elodie-docker
 	url = https://github.com/ps1337/elodie-docker.git
+[submodule "kali-docker"]
+	path = kali-docker
+	url = https://github.com/ps1337/kali-docker.git
