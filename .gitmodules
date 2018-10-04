@@ -37,3 +37,6 @@
 [submodule "kali-docker"]
 	path = kali-docker
 	url = https://github.com/ps1337/kali-docker.git
+[submodule "moneymanagerex-docker"]
+	path = moneymanagerex-docker
+	url = https://github.com/ps1337/moneymanagerex-docker
